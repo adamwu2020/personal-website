@@ -202,13 +202,22 @@ function typeWriter(element, text, speed = 100) {
 // Initialize typing animation when page loads
 document.addEventListener('DOMContentLoaded', () => {
     const heroTitle = document.querySelector('.hero-title');
-    if (heroTitle) {
-        const originalText = heroTitle.innerHTML;
-        // Only run typing animation if it hasn't been run before
-        if (!sessionStorage.getItem('typingAnimationComplete')) {
-            typeWriter(heroTitle, originalText, 50);
-            sessionStorage.setItem('typingAnimationComplete', 'true');
+    if (heroTitle && !sessionStorage.getItem('typingAnimationComplete')) {
+        // Animate only the plain text node "Hi, I'm " before the <span>
+        const textNode = heroTitle.firstChild;
+        if (textNode && textNode.nodeType === Node.TEXT_NODE) {
+            const fullText = textNode.textContent;
+            textNode.textContent = '';
+            let i = 0;
+            function type() {
+                if (i < fullText.length) {
+                    textNode.textContent += fullText[i++];
+                    setTimeout(type, 50);
+                }
+            }
+            type();
         }
+        sessionStorage.setItem('typingAnimationComplete', 'true');
     }
 });
 
