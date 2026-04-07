@@ -1,6 +1,6 @@
-# Lei Wu - Personal Website
+# Adam W. - Personal Website
 
-A modern, responsive personal website showcasing Lei Wu's professional experience, skills, and contact information.
+A modern, responsive personal website showcasing Adam W.'s professional experience, skills, and contact information.
 
 ## Features
 
@@ -120,7 +120,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## Support
 
-For questions or issues, please contact Lei Wu through the contact form on the website or via LinkedIn.
+For questions or issues, please contact Adam W. through the contact form on the website or via LinkedIn.
 
 ---
 
