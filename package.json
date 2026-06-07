@@ -1,0 +1,23 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "description": "A modern, responsive personal website showcasing Lei Wu's professional experience, skills, and contact information.",
+  "main": "script.js",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leiwu2020/personal-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leiwu2020/personal-website/issues"
+  },
+  "homepage": "https://github.com/leiwu2020/personal-website#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0"
+  }
+}
